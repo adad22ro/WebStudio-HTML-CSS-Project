@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
 }
 
 button {
@@ -1171,7 +1171,7 @@ input[type="email"]:focus,
   }
 
   .what-we-do-articles p {
-    width: 270px;
+    /* width: 270px; */
   }
 
   .team-cards ul {
@@ -1211,5 +1211,24 @@ input[type="email"]:focus,
 
   .footer-section .social-links-footer {
     margin-left: 0;
+  }
+
+  /* Modal */
+
+  .modal-content {
+    width: 528px;
+  }
+
+  .modal-form .imput-field input {
+    width: 448px;
+  }
+
+  .modal-form textarea {
+    width: 448px;
+  }
+
+  .terms-and-conds .agreement-check {
+    font-size: 14px;
+    letter-spacing: 0.42px;
   }
 }
