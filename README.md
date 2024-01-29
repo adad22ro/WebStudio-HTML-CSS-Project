@@ -1,2 +1,1 @@
-# goit-markup-hw-07
-HomeWork 7
+# WebStudio-HTML-CSS-PRIJECT
