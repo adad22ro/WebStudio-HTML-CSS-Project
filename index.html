@@ -12,104 +12,97 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="container">
-    <!-- Mobile navigation menu -->
-    <div class="js-menu-container">
-      <button class="close-btn-modile-menu js-close-menu">
-        <svg class="mobile-close-btn">
-          <use href="./images/icons.svg#icon-close-button-mobile"></use>
-        </svg>
-      </button>
-
-      <nav class="mobile-nav">
-        <ul class="mobile-navigation">
-          <li>
-            <a href="./index.html" class="mobile-nav-links">Studio</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="mobile-nav-links">Portfolio</a>
-          </li>
-          <li><a href="" class="mobile-nav-links">Contacts</a></li>
-        </ul>
-      </nav>
-
-      <div class="mobile-nav-contacts">
-        <a href="mailto:info@devstudio.com" class="mail-nav-contacts">
-          info@devstudio.com</a
-        >
-
-        <a href="tel:+12127724150" class="tel-nav-contacts"> +1 212-772-4150</a>
-      </div>
-
-      <div class="social-link-mobile">
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <hr />
-          <li><a href="">Twitter</a></li>
-          <hr />
-          <li><a href="">Facebook</a></li>
-          <hr />
-          <li><a href="">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-
     <!-- header -->
     <header>
       <!-- navigation bar -->
-      <div class="navigation-bar">
-        <a href="./index.html" class="logo"
-          ><span class="logo-web">Web</span>Studio</a
-        >
-
-        <svg class="mobile-menu-icon js-open-menu">
-          <use href="./images/icons.svg#icon-mobile-menu"></use>
-        </svg>
-        <!-- navigation buttons -->
-        <nav class="nav">
-          <ul class="navigation">
-            <li>
-              <a href="./index.html" class="nav-links index-page">Studio</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="nav-links portfolio"
-                >Portfolio</a
-              >
-            </li>
-            <li><a href="" class="nav-links contacts-page">Contacts</a></li>
-          </ul>
+      <div class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+          <div class="container-fluid">
+            <a href="./index.html" class="logo me-5 text-decoration-none fs-2"
+              ><span class="logo-web">Web</span>Studio</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    href="./index.html"
+                    aria-current="page"
+                    class="index-page fw-bold nav-link active"
+                    >Studio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./portfolio.html" class="nav-link fw-bold portfolio"
+                    >Portfolio</a
+                  >
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right nav-contacts-pos">
+                <li>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="nav-contacts fw-bold"
+                  >
+                    <svg width="16px" height="12px" class="nav-icon">
+                      <use
+                        href="./images/icons.svg#icon-email"
+                        width="16px"
+                        height="12px"
+                      ></use></svg
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+12127724150" class="nav-contacts fw-bold">
+                    <svg width="10px" height="16px" class="nav-icon">
+                      <use
+                        href="./images/icons.svg#icon-smartphone"
+                        width="10px"
+                        height="16px"
+                      ></use></svg
+                    >+1 212-772-4150</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <!-- navigation contacts -->
-        <div class="nav-contacts-pos">
-          <div>
-            <a href="mailto:info@devstudio.com" class="nav-contacts">
-              <svg width="16px" height="12px" class="nav-icon">
-                <use
-                  href="./images/icons.svg#icon-email"
-                  width="16px"
-                  height="12px"
-                ></use></svg
-              >info@devstudio.com</a
-            >
-          </div>
-          <div>
-            <a href="tel:+12127724150" class="nav-contacts">
-              <svg width="10px" height="16px" class="nav-icon">
-                <use
-                  href="./images/icons.svg#icon-smartphone"
-                  width="10px"
-                  height="16px"
-                ></use></svg
-              >+1 212-772-4150</a
-            >
-          </div>
-        </div>
       </div>
       <!-- hero section -->
       <section class="hero-section">
         <h1 class="hero-heading">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button" data-modal-open>Request our service</button>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Request our service
+        </button>
       </section>
     </header>
     <main>
@@ -464,148 +457,201 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer class="footer-section">
-        <div class="logo-and-adress">
-          <a href="index.html" class="footer-logo"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-          <!-- Footer adress -->
-          <address class="footer-contacts-section">
-            <p class="footer-adress">695 Park Ave, NY 10065, USA</p>
-            <a
-              href="mailto:info@devstudio.com"
-              class="footer-contacts footer-mail"
-              >info@devstudio.com</a
-            >
-            <a href="tel:+12127724150" class="footer-contacts"
-              >+1 212-772-4150</a
-            >
-          </address>
-        </div>
-        <!-- Social icons -->
-        <div class="social-links-footer">
-          <h3>find us on</h3>
-          <ul>
-            <li>
-              <a href=""
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <!-- Footer email form -->
-        <div class="form">
-          <h3>Subscribe to the newsletter</h3>
-          <form class="footer-form">
-            <label class="footer-email-form">
-              <input type="email" name="email" placeholder="E-mail" />
-            </label>
+      <div class="container my-5">
+        <footer class="text-white text-center text-lg-start bg-dark">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div
+                class="col-lg-4 col-md-12 mb-4 mb-md-0 d-inline-flex flex-column"
+              >
+                <div class="align-self-center">
+                  <a href="index.html" class="footer-logo"
+                    ><span class="logo-web">Web</span>Studio</a
+                  >
+                </div>
 
-            <button type="submit" class="footer-form-btn">
-              <p>Subscribe</p>
-              <svg width="24px" height="24px">
-                <use href="./images/icons.svg#icon-sed"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </footer>
+                <!-- Footer adress -->
+                <address class="footer-contacts-section">
+                  <p class="footer-adress">695 Park Ave, NY 10065, USA</p>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer-contacts footer-mail"
+                    >info@devstudio.com</a
+                  >
+                  <a href="tel:+12127724150" class="footer-contacts"
+                    >+1 212-772-4150</a
+                  >
+                </address>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <div class="social-links-footer">
+                  <h3>find us on</h3>
+                  <ul class="px-0">
+                    <li>
+                      <a href=""
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/icons.svg#icon-instagram"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/icons.svg#icon-twitter"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/icons.svg#icon-facebook"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><svg width="20px" height="20px">
+                          <use
+                            href="./images/icons.svg#icon-linkedin"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 form">
+                <h3>Subscribe to the newsletter</h3>
+
+                <div class="form-outline form-white mb-4">
+                  <form class="footer-form">
+                    <label class="form-label footer-email-form mb-0">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                        class="form-control form-control-lg"
+                    /></label>
+                    <button type="submit" class="footer-form-btn">
+                      <p class="my-0">Subscribe</p>
+                      <svg width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-sed"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+        </footer>
+      </div>
     </main>
 
     <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close close-btn p-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-    <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
-        <button class="close-btn" data-modal-close><span>&times;</span></button>
-        <div class="modal-form-content">
-          <h2>Leave your information and we'll call you back</h2>
-          <form class="modal-form">
-            <!-- Name field -->
-            <div class="name-form imput-field">
-              <span>Name</span>
-              <div>
-                <lable class="input-section">
-                  <input type="text" name="name" />
-                  <svg width="18px" height="18px" class="form-icons name-icon">
-                    <use href="./images/icons.svg#icon-name-field"></use>
+          <div class="modal-form-content">
+            <h2 class="pt-4">Leave your information and we'll call you back</h2>
+            <form class="modal-form pb-5">
+              <!-- Name field -->
+              <div class="name-form imput-field">
+                <span>Name</span>
+                <div>
+                  <lable class="input-section">
+                    <input type="text" name="name" />
+                    <svg
+                      width="18px"
+                      height="18px"
+                      class="form-icons name-icon"
+                    >
+                      <use href="./images/icons.svg#icon-name-field"></use>
+                    </svg>
+                  </lable>
+                </div>
+              </div>
+              <!-- Telephone field -->
+              <div class="tel-form imput-field">
+                <span>Telephone</span>
+                <div>
+                  <lable class="input-section">
+                    <input type="tel" name="telephon" />
+                    <svg width="18px" height="18px" class="form-icons">
+                      <use href="./images/icons.svg#icon-tel-field"></use></svg
+                  ></lable>
+                </div>
+              </div>
+              <!-- Email field -->
+              <div class="email-form imput-field">
+                <span>E-mail</span>
+                <div>
+                  <lable class="input-section">
+                    <input type="email" name="email" />
+                    <svg width="18px" height="18px" class="form-icons">
+                      <use href="./images/icons.svg#icon-email-field"></use>
+                    </svg>
+                  </lable>
+                </div>
+              </div>
+              <!-- Comments field -->
+              <div class="comments-form">
+                <span>Comments</span>
+                <div>
+                  <lable>
+                    <textarea
+                      name="comments"
+                      placeholder="Enter the text"
+                    ></textarea>
+                  </lable>
+                </div>
+              </div>
+              <!-- Termn and conditions -->
+              <div class="terms-and-conds">
+                <label class="terms-and-conds-lbl">
+                  <input type="checkbox" class="checkmark" name="agreement" />
+                  <svg width="16px" height="16px" class="check-box">
+                    <use href="./images/icons.svg#checkbox"></use>
                   </svg>
-                </lable>
+                  <span class="agreement-check">
+                    I agree with the letter and accept the
+                    <a href="">Terms and Conditions</a>
+                  </span>
+                </label>
               </div>
-            </div>
-            <!-- Telephone field -->
-            <div class="tel-form imput-field">
-              <span>Telephone</span>
-              <div>
-                <lable class="input-section">
-                  <input type="tel" name="telephon" />
-                  <svg width="18px" height="18px" class="form-icons">
-                    <use href="./images/icons.svg#icon-tel-field"></use></svg
-                ></lable>
-              </div>
-            </div>
-            <!-- Email field -->
-            <div class="email-form imput-field">
-              <span>E-mail</span>
-              <div>
-                <lable class="input-section">
-                  <input type="email" name="email" />
-                  <svg width="18px" height="18px" class="form-icons">
-                    <use href="./images/icons.svg#icon-email-field"></use>
-                  </svg>
-                </lable>
-              </div>
-            </div>
-            <!-- Comments field -->
-            <div class="comments-form">
-              <span>Comments</span>
-              <div>
-                <lable>
-                  <textarea
-                    name="comments"
-                    placeholder="Enter the text"
-                  ></textarea>
-                </lable>
-              </div>
-            </div>
-            <!-- Termn and conditions -->
-            <div class="terms-and-conds">
-              <label class="terms-and-conds-lbl">
-                <input type="checkbox" class="checkmark" name="agreement" />
-                <svg width="16px" height="16px" class="check-box">
-                  <use href="./images/icons.svg#checkbox"></use>
-                </svg>
-                <span class="agreement-check">
-                  I agree with the letter and accept the
-                  <a href="">Terms and Conditions</a>
-                </span>
-              </label>
-            </div>
-            <button type="submit" class="send-btn">Send</button>
-          </form>
+              <button type="submit" class="send-btn">Send</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>

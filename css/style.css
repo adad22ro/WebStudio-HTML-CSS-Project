@@ -284,7 +284,9 @@ img {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  background: url(../images/hero-bg-mobile.jpg) no-repeat center;
+  background: url(../images/hero-bg-mobile.jpg) fixed center no-repeat;
+
+  background-size: cover;
 }
 
 .hero-section button {
@@ -583,6 +585,7 @@ img {
 }
 
 .footer-contacts-section {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -651,7 +654,6 @@ img {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 15px;
 }
 
 .footer-email-form input {
@@ -940,10 +942,6 @@ img {
   letter-spacing: 0.14px;
 }
 
-.modal-form-content h2 {
-  margin-bottom: 26px;
-}
-
 .terms-and-conds .agreement-check {
   color: #757575;
   font-size: 12px;
@@ -1021,7 +1019,6 @@ input[type="email"]:focus,
   }
 
   .nav-contacts {
-    display: flex;
     font-size: 12px;
     letter-spacing: 0.24px;
   }
@@ -1033,7 +1030,8 @@ input[type="email"]:focus,
   }
 
   .hero-section {
-    background: url(../images/hero-bg-tablet.jpg) no-repeat center;
+    background: url(../images/hero-bg-tablet.jpg) fixed center no-repeat;
+    background-size: cover;
   }
 
   .what-we-do-articles {
@@ -1130,8 +1128,9 @@ input[type="email"]:focus,
   /* hero section */
 
   .hero-section {
-    background: url(../images/hero-background-image-dekstop.jpg) no-repeat
-      center;
+    background: url(../images/hero-background-image-dekstop.jpg) fixed center
+      no-repeat;
+    background-size: cover;
   }
 
   .hero-heading {
@@ -1195,10 +1194,6 @@ input[type="email"]:focus,
     text-align: start;
   }
 
-  .what-we-do-articles p {
-    /* width: 270px; */
-  }
-
   .team-cards ul {
     display: flex;
     flex-direction: row;
@@ -1222,17 +1217,8 @@ input[type="email"]:focus,
     margin-bottom: 60px;
   }
 
-  .footer-form {
-    flex-direction: row;
-  }
-
   .footer-email-form input {
-    width: 358px;
-  }
-
-  .form {
-    margin-bottom: 0;
-    align-items: start;
+    width: auto;
   }
 
   .footer-section .social-links-footer {
